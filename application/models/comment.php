@@ -2,7 +2,7 @@
 class Comment extends CI_Model
 {
 	//获得获得post 的所有comment
-	function get_all_comment($postID)
+	function get_all_comments($postID)
 	{
 		$this->db->select()->from('comments')->where('active', 1)->order_by('postID');
 		$query = $this->db->get();
